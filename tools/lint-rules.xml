@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<lint>
+
+  <issue id="RtlSymmetry" severity="ignore" />
+  <issue id="RtlHardcoded" severity="ignore" />
+  <issue id="RtlEnabled" severity="ignore" />
+  <issue id="ContentDescription" severity="ignore" />
+  <issue id="LockedOrientationActivity" severity="ignore" />
+
+  <!--  temporary (need to be fixed, but not right now)-->
+  <issue id="ObsoleteLintCustomCheck" severity="ignore" />
+</lint>

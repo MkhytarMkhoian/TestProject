@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_app"
+    app:startDestination="@+id/login">
+
+  <fragment
+      android:id="@+id/login"
+      android:name="com.test.project.features.auth.login.LoginFragment"
+      android:label="login">
+
+    <action
+        android:id="@+id/nav_action_restaurants"
+        app:destination="@id/restaurants"
+        app:popUpTo="@+id/login"
+        app:popUpToInclusive="true" />
+
+    <action
+        android:id="@+id/nav_action_help"
+        app:destination="@+id/help" />
+  </fragment>
+
+  <fragment
+      android:id="@+id/restaurants"
+      android:name="com.test.project.features.settings.restaurants.RestaurantsFragment"
+      android:label="restaurants">
+
+    <argument
+        android:name="bundle"
+        app:argType="com.test.project.features.settings.restaurants.models.RestaurantBundle" />
+  </fragment>
+</navigation>

@@ -1,0 +1,59 @@
+<resources>
+  <string name="app_name">Allset-Merchant</string>
+  <string name="apply">Apply</string>
+  <string name="login__email">Email</string>
+  <string name="login__password">Password</string>
+  <string name="login__forgot_password">Forgot password?</string>
+  <string name="login__log_in">Log in</string>
+  <string name="login__enter_email_and_password">Enter email and password</string>
+  <string name="login__please_enter_email">Please enter email</string>
+  <string name="login__please_enter_password">Please enter password</string>
+  <string name="login__the_email_your_entered_is_incorrect_please_try_again">The email your entered is incorrect.  Please try again.</string>
+  <string name="login__couldnt_find_your_account">Couldn\'t find your account</string>
+  <string name="login__wrong_password_try_again_or_click_forgot_password_to_reset_it">Wrong password. Try again or click Forgot password to reset it.</string>
+  <string name="all_loading">Loading…</string>
+  <string name="all_restaurants">Restaurants</string>
+  <string name="all_no_internet_connection">No internet connection</string>
+  <string name="all_connect_to_wi_fi_network_or_enable_mobile_data_and_try_again">Connect to Wi-Fi network or enable mobile data and try again.</string>
+  <string name="all_try_again">Try again</string>
+  <string name="all_whoops">Whoops</string>
+  <string name="all_sorry_something_went_wrong_give_it_another_try">Sorry, something went wrong. Give it another try.</string>
+  <string name="all_cancel">Cancel</string>
+  <string name="all_yes">Yes</string>
+
+  <string name="order_new_order">New order</string>
+  <string name="order_status_unconfirmed">Unconfirmed</string>
+  <string name="order_status_on_hold">On Hold</string>
+  <string name="order_status_preparing">Preparing</string>
+  <string name="order_status_ready">Ready</string>
+  <string name="order_status_canceled">Canceled</string>
+  <string name="order_item_warning">Item warning</string>
+  <string name="order_no_ongoing_orders">No ongoing orders</string>
+  <string name="order_min">min</string>
+  <string name="order_hour">hour</string>
+  <string name="order_details__dine_in">Dine-in</string>
+  <string name="order_details__pick_up">Pickup</string>
+  <string name="order_details__canceled_do_not_prepare">Canceled - Do not prepare</string>
+  <string name="order_details__this_order_is_on_hold">This order is On Hold</string>
+  <string name="order_details__were_contacting_the_customer_about_changes_to_this_order_please_do_not_prepare_this_order_yet">We\'re contacting the customer about changes to this order. \nPlease do not prepare this order yet.</string>
+  <string name="order_details__subtotal">Subtotal</string>
+  <string name="order_details__tax">Tax</string>
+  <string name="order_details__tip">Tip</string>
+  <string name="order_details__total">Total</string>
+  <string name="order_details__customer_notes">Customer notes: %s</string>
+
+  <string name="help_contact_support">Contact support</string>
+  <string name="help_help_center">Help center</string>
+  <string name="help_help_phone">+1 (510) 210–1052</string>
+
+  <string name="app_menu_history">History</string>
+  <string name="app_menu_menu_availability">Menu availability</string>
+  <string name="app_menu_help">Help</string>
+  <string name="app_menu_settings">Settings</string>
+
+  <string name="settings_settings">Settings</string>
+  <string name="settings_account">Account</string>
+  <string name="settings_log_out">Log out</string>
+  <string name="settings_version">Version %s</string>
+  <string name="settings_log_out_q">Are you sure you want to log out?</string>
+</resources>

@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!-- naming from http://chir.ag/projects/name-that-color/ -->
+
+  <color name="ic_launcher_background">@color/white</color>
+  <color name="primary">#F2F2F7</color>
+  <color name="primary_variant">#797980</color>
+  <color name="status_bar_color">#e8e8ec</color>
+  <color name="splash_background">#FF5C40</color>
+
+  <color name="white">#FFFFFF</color>
+  <color name="black">#000000</color>
+  <color name="black_transparent_10">#1A000000</color>
+  <color name="black_transparent_15">#26000000</color>
+  <color name="black_transparent_20">#33000000</color>
+  <color name="black_transparent_30">#4C000000</color>
+  <color name="black_transparent_40">#66000000</color>
+  <color name="black_transparent_50">#80000000</color>
+  <color name="black_transparent_65">#A6000000</color>
+  <color name="black_transparent_70">#B3000000</color>
+  <color name="transparent">#00000000</color>
+  <color name="white_transparent_17">#19FFFFFF</color>
+  <color name="white_transparent_50">#80FFFFFF</color>
+  <color name="white_transparent_70">#B3FFFFFF</color>
+  <color name="red">#FF3B30</color>
+  <color name="red_transparent_55">#19FF3B30</color>
+  <color name="torch_red">#FF1A1A</color>
+  <color name="primary_transparent_30">#4CFF5C40</color>
+  <color name="primary_transparent_50">#80FF5C40</color>
+  <color name="thunderbird">#C52416</color>
+  <color name="flamingo">#EC553B</color>
+  <color name="salmon">#FF8F6C</color>
+  <color name="paco">#41170F</color>
+  <color name="mid_grey">#C7C7CC</color>
+  <color name="mid_grey_transparent_30">#4DC7C7CC</color>
+  <color name="grey">#F2F2F7</color>
+  <color name="grey_2">#8F8F93</color>
+  <color name="grey_2_transparent_50">#808F8F93</color>
+  <color name="grey_transparent_17">#198E8E93</color>
+  <color name="grey_transparent_25">#408E8E93</color>
+  <color name="grey_transparent_30">#4C8E8E93</color>
+  <color name="grey_transparent_80">#CC8E8E93</color>
+  <color name="light_grey_2">#D1D1D6</color>
+  <color name="light_grey">#E5E5EA</color>
+  <color name="light_grey_transparent_12">#1F79801F</color>
+  <color name="light_grey_c2">#EFEFF4</color>
+  <color name="light_grey_c">#F2F2F5</color>
+  <color name="light_grey_c50">#50F2F2F5</color>
+  <color name="grey_b">#5E5E61</color>
+  <color name="blue">#007AFF</color>
+  <color name="blue_transparent_05">#0C007AFF</color>
+  <color name="blue_transparent_55">#19007AFF</color>
+  <color name="grey_b2">#252531</color>
+  <color name="royal_blue">#426BF2</color>
+  <color name="gallery">#EEEEEE</color>
+  <color name="cod_gray_transparent_20">#33141414</color>
+  <color name="cod_gray_transparent_70">#B3141414</color>
+  <color name="green">#43BF58</color>
+  <color name="green_2">#04d98e</color>
+  <color name="green_transparent_50">#8043BF58</color>
+  <color name="mine_shaft_transparent_60">#992E2D2D</color>
+  <color name="electric_violet">#613FFF</color>
+  <color name="nobel">#B3B3B3</color>
+  <color name="iron">#DFDFE0</color>
+  <color name="dark_transparent_10">#1A798080</color>
+  <color name="tuna_transparent_50">#803B3B3D</color>
+
+  <!-- reward program progress bar -->
+  <color name="reward_bar_1">#03F1AC</color>
+  <color name="reward_bar_2">#01CEE9</color>
+  <color name="reward_bar_3">#00C6F6</color>
+  <color name="reward_bar_4">#01D3E0</color>
+  <color name="reward_bar_5">#00C6F7</color>
+
+  <!-- reward earned background -->
+  <color name="reward_earned_1">#00C1FF</color>
+  <color name="reward_earned_2">#05F7A4</color>
+
+</resources>
