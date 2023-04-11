@@ -1,10 +1,6 @@
 package com.test.project.app
 
-import com.test.project.features.developer_settings.Flipper
 import com.test.project.features.developer_settings.TaggableDebugTree
-import com.facebook.flipper.android.AndroidFlipperClient
-import com.facebook.flipper.android.utils.FlipperUtils
-import com.facebook.soloader.SoLoader
 import dagger.hilt.android.HiltAndroidApp
 import timber.log.Timber
 import javax.inject.Inject
@@ -18,26 +14,16 @@ class App : BaseApp() {
   }
 
   @Inject
-  lateinit var flipper: Flipper
+  lateinit var flipperInteractor: FlipperInteractor
 
   override fun onCreate() {
     super.onCreate()
     instance = this
     initTimber()
-    initFlipper()
+    flipperInteractor.setup(this)
   }
 
   override fun isDebug(): Boolean = true
-
-  private fun initFlipper() {
-    SoLoader.init(this, false)
-
-    if (FlipperUtils.shouldEnableFlipper(this)) {
-      val client = AndroidFlipperClient.getInstance(this)
-      flipper.addNetworkFlipperPlugin(client)
-      client.start()
-    }
-  }
 
   private fun initTimber() {
     // unique tag prefix for easy filtering on some devices

@@ -16,3 +16,10 @@ val PrimaryGreen = Color(0xff00C853)
 val Orange = Color(0xffFF9500)
 val LightGrey = Color(0xffE5E5EA).copy(alpha = 0.5f)
 val LabelDark = Color(0xffEBEBF5).copy(alpha = 0.3f)
+
+/**
+ * This is the minimum amount of calculated contrast for a color to be used on top of the
+ * surface color. These values are defined within the WCAG AA guidelines, and we use a value of
+ * 3:1 which is the minimum for user-interface components.
+ */
+const val MinContrastOfPrimaryVsSurface = 3f

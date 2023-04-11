@@ -9,8 +9,6 @@ import com.test.project.shared.coroutines.CoroutineDispatchers
 import com.test.project.shared.coroutines.CoroutineDispatchersImpl
 import com.test.project.shared.resources.ResStorage
 import com.test.project.shared.resources.ResStorageImpl
-import com.test.project.shared.storage.DataStorage
-import com.test.project.shared.storage.DataStorageImpl
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -38,11 +36,6 @@ object AppModule {
   @Provides
   fun provideCoroutineDispatchers(coroutineDispatchers: CoroutineDispatchersImpl): CoroutineDispatchers =
     coroutineDispatchers
-
-  @Provides
-  fun provideDataStorage(dataStorageImpl: DataStorageImpl): DataStorage {
-    return dataStorageImpl
-  }
 
   @Provides
   @Singleton

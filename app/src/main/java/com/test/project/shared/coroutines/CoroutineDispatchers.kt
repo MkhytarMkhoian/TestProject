@@ -16,8 +16,17 @@ class CoroutineDispatchersImpl @Inject constructor() : CoroutineDispatchers {
     override val ioContext: CoroutineContext
         get() = Dispatchers.IO
     override val uiContext: CoroutineContext
-        get() = Dispatchers.Main
+        get() = Dispatchers.Main.immediate
     override val defaultContext: CoroutineContext
         get() = Dispatchers.Default
+}
+
+class CoroutineDispatchersTest : CoroutineDispatchers {
+    override val ioContext: CoroutineContext
+        get() = Dispatchers.Main.immediate
+    override val uiContext: CoroutineContext
+        get() = Dispatchers.Main.immediate
+    override val defaultContext: CoroutineContext
+        get() = Dispatchers.Main.immediate
 }
 

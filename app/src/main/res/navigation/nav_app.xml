@@ -2,31 +2,38 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_app"
-    app:startDestination="@+id/login">
+    app:startDestination="@+id/links">
+
+  <action
+      android:id="@+id/nav_action_links"
+      app:destination="@id/links" />
 
   <fragment
-      android:id="@+id/login"
-      android:name="com.test.project.features.auth.login.LoginFragment"
-      android:label="login">
+      android:id="@+id/links"
+      android:name="com.test.project.features.links.LinkFragment"
+      android:label="links">
 
     <action
-        android:id="@+id/nav_action_restaurants"
-        app:destination="@id/restaurants"
-        app:popUpTo="@+id/login"
-        app:popUpToInclusive="true" />
+        android:id="@+id/nav_action_player"
+        app:destination="@id/player" />
 
-    <action
-        android:id="@+id/nav_action_help"
-        app:destination="@+id/help" />
+    <argument
+        android:name="url"
+        app:nullable="true"
+        android:defaultValue=""
+        app:argType="string" />
+
   </fragment>
 
   <fragment
-      android:id="@+id/restaurants"
-      android:name="com.test.project.features.settings.restaurants.RestaurantsFragment"
-      android:label="restaurants">
+      android:id="@+id/player"
+      android:name="com.test.project.features.player.PlayerFragment"
+      android:label="player">
 
     <argument
         android:name="bundle"
-        app:argType="com.test.project.features.settings.restaurants.models.RestaurantBundle" />
+        app:argType="com.test.project.features.player.models.PlayerBundle" />
+
   </fragment>
+
 </navigation>

@@ -11,13 +11,9 @@
   -->
   <domain-config cleartextTrafficPermitted="true">
     <domain includeSubdomains="true">127.0.0.1</domain>
+    <domain includeSubdomains="true">cdn-profiles.tunein.com</domain>
+    <domain includeSubdomains="true">opml.radiotime.com</domain>
+    <domain includeSubdomains="true">streaming.radio.co</domain>
   </domain-config>
-
-  <base-config>
-    <trust-anchors>
-      <certificates src="system" />
-      <certificates src="user" />
-    </trust-anchors>
-  </base-config>
 
 </network-security-config>

@@ -2,8 +2,6 @@ package  com.test.project.shared.api.interceptors
 
 import android.content.Context
 import com.test.project.BuildConfig
-import com.test.project.shared.storage.TokenDataStorage
-import kotlinx.coroutines.runBlocking
 import okhttp3.Interceptor
 import okhttp3.Request
 import okhttp3.Response
@@ -12,7 +10,6 @@ import javax.inject.Inject
 
 class HeaderInterceptor @Inject constructor(
   private val context: Context,
-  private val dataStorage: TokenDataStorage,
 ) : Interceptor {
 
   @Throws(IOException::class)
@@ -29,12 +26,6 @@ class HeaderInterceptor @Inject constructor(
       builder.addHeader(DEVICE_HEADER_KEY, DEVICE)
       builder.addHeader(CONTENT_TYPE_HEADER_KEY, JSON_CONTENT_TYPE)
       builder.addHeader(ACCEPT_HEADER_KEY, JSON_ACCEPT_TYPE)
-
-      runBlocking {
-        dataStorage.getAccessToken()?.let { token ->
-          builder.addHeader(AUTHORIZATION_HEADER_KEY, "Bearer $token")
-        }
-      }
 
     } else {
       builder.removeHeader(NO_HEADERS_MARKER)
@@ -64,7 +55,6 @@ class HeaderInterceptor @Inject constructor(
     private const val DEVICE_HEADER_KEY = "Device"
     private const val CONTENT_TYPE_HEADER_KEY = "Content-Type"
     private const val ACCEPT_HEADER_KEY = "Accept"
-    private const val AUTHORIZATION_HEADER_KEY = "Authorization"
     const val NO_HEADERS_MARKER = "NO_HEADERS"
   }
 }

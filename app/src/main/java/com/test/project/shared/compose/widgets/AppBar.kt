@@ -1,30 +1,24 @@
 package com.test.project.shared.compose.widgets
 
-import androidx.compose.foundation.BorderStroke
 import androidx.compose.foundation.Image
-import androidx.compose.foundation.interaction.MutableInteractionSource
-import androidx.compose.foundation.interaction.collectIsPressedAsState
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
-import androidx.compose.runtime.*
+import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.SideEffect
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.ColorFilter
-import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.painter.Painter
 import androidx.compose.ui.res.colorResource
 import androidx.compose.ui.res.painterResource
-import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
-import androidx.compose.ui.unit.sp
+import com.google.accompanist.systemuicontroller.rememberSystemUiController
 import com.test.project.R
 import com.test.project.shared.compose.theme.BackgroundVariant
-import com.test.project.shared.compose.theme.Secondary
-import com.test.project.shared.compose.theme.SecondaryVariant
-import com.google.accompanist.systemuicontroller.rememberSystemUiController
 
 private val AppBarHorizontalPadding = 4.dp
 
@@ -123,88 +117,6 @@ fun AppBar(
       }
     }
   }
-}
-
-@Composable
-fun ToolbarIconButton(
-  onClick: () -> Unit,
-  modifier: Modifier = Modifier,
-  painter: Painter,
-  enabled: Boolean = true,
-  interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-  elevation: ButtonElevation? = null,
-  shape: Shape = MaterialTheme.shapes.small,
-  border: BorderStroke? = null,
-  colors: ButtonColors = ButtonDefaults.textButtonColors(),
-  contentPadding: PaddingValues = PaddingValues(
-    start = 8.dp,
-    top = 0.dp,
-    end = 8.dp,
-    bottom = 0.dp
-  ),
-) {
-  CustomButton(
-    modifier = modifier,
-    enabled = enabled,
-    interactionSource = interactionSource,
-    indication = null,
-    elevation = elevation,
-    shape = shape,
-    border = border,
-    colors = colors,
-    contentPadding = contentPadding,
-    onClick = onClick,
-    content = {
-      Image(
-        painter = painter,
-        contentDescription = null,
-      )
-    }
-  )
-}
-
-@Composable
-fun ToolbarTextButton(
-  onClick: () -> Unit,
-  modifier: Modifier = Modifier,
-  text: String,
-  enabled: Boolean = true,
-  interactionSource: MutableInteractionSource = remember { MutableInteractionSource() },
-  elevation: ButtonElevation? = null,
-  shape: Shape = MaterialTheme.shapes.small,
-  border: BorderStroke? = null,
-  colors: ButtonColors = ButtonDefaults.textButtonColors(),
-  contentPadding: PaddingValues = PaddingValues(
-    start = 8.dp,
-    top = 0.dp,
-    end = 8.dp,
-    bottom = 0.dp
-  ),
-) {
-  val isPressed by interactionSource.collectIsPressedAsState()
-  CustomButton(
-    modifier = modifier,
-    enabled = enabled,
-    interactionSource = interactionSource,
-    indication = null,
-    elevation = elevation,
-    shape = shape,
-    border = border,
-    colors = colors,
-    contentPadding = contentPadding,
-    onClick = onClick,
-    content = {
-      Text(
-        text = text,
-        color = if (isPressed) SecondaryVariant else Secondary,
-        fontWeight = FontWeight.Bold,
-        fontSize = 17.sp,
-        lineHeight = 24.sp,
-        letterSpacing = (-0.41).sp,
-        maxLines = 1,
-      )
-    }
-  )
 }
 
 @Composable

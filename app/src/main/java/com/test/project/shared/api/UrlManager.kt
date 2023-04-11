@@ -8,20 +8,10 @@ import okhttp3.HttpUrl.Companion.toHttpUrlOrNull
 import timber.log.Timber
 import java.util.LinkedList
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class UrlManager
-@Inject constructor(
-) {
+class UrlManager @Inject constructor() {
 
-  fun getTokenBaseUrl(): String = runBlocking {
-    return@runBlocking "dataStorage.getHost().url"
-  }
-
-  fun getApiBaseUrl(): String = runBlocking {
-    return@runBlocking "dataStorage.getHost().url"
-  }
+  fun getApiBaseUrl(): String = "https://opml.radiotime.com/"
 
   fun concatWithBaseUrl(method: String): String {
     return getApiBaseUrl() + method

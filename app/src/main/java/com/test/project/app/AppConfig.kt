@@ -66,7 +66,4 @@ class AppConfig
     }
 
   }
-
-  fun getWindowWidth(): Int = displaySize.x
-  fun getWindowHeight(): Int = displaySize.y
 }
